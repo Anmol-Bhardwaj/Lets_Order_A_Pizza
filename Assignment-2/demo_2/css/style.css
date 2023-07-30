@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f0efef;
+}
+
+::-webkit-scrollbar {
+    width: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgba(5, 5, 113, 0.792), rgba(5, 5, 113, 0.392));
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(rgba(5, 5, 113, 1), rgba(5, 5, 113, 0.592));
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px grey;
+    background-color: rgba(255, 166, 0, 0.805);
+}
+
+header {
+    /* background-color: rgba(255, 166, 0, 0.795); */
+    width: 100%;
+    height: 100vh;
+    /* border: 3px solid pink; */
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+}
+
+header>nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 166, 0, 0.805);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 2;
+    position: fixed;
+    /* border: 5px solid green; */
+    /* opacity: 2   00; */
+}
+
+header>nav>.logo {
+    width: 8vh;
+    height: 8vh;
+    overflow: hidden;
+    border-radius: 20px;
+    /* border: 5px solid purple; */
+}
+
+header>nav>.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+header>nav>a {
+    margin-left: 110px;
+    width: 15%;
+    
+    /* border: 1px solid red;  */
+}
+
+header>nav>a>button {
+    padding: 8% 20%;
+    border-radius: 50px;
+    border: none;
+    /* background-color: #D56F00; */
+    background-color: rgba(5, 5, 113, 0.792);
+    color: rgba(255, 166, 0, 0.805);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* header > nav > .navtags{
+    border: 1px solid red;
+} */
+header>nav>.navtags>a {
+    text-decoration: none;
+    color: rgba(5, 5, 113, 0.792);
+    font-size: 25px;
+    padding-left: 40px;
+    font-weight: bolder;
+}
+
+
+
+main {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 15px;
+    /* border: 2px solid red; */
+}
+
+main>.section1 {
+    width: 100%;
+    height: 40vh;
+    /* border: 3px solid green; */
+    display: flex;
+    margin-bottom: 15px;
+}
+
+main>.section1>.heading {
+    width: 50%;
+    /* border: 1px solid red; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+main>.section1>.heading>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 166, 0, 0.805);
+    font-size: 300%;
+}
+
+main>.section1>.heading>h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(5, 5, 113, 0.792);
+    font-size: 150%;
+    margin-top: 10px;
+}
+
+main>.section1>.advertisementimg {
+    margin-right: 20%;
+    margin-left: 10%;
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+main>.section1>.advertisementimg>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.borderdiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.borderdiv>div {
+    width: 30%;
+    margin: 15px 0;
+    border: 2px solid orange;
+}
+
+
+
+
+main>.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+
+main>.section2>figure {
+    width: 26%;
+    height: 16%;
+    margin-top: 15px;
+    /* cursor: pointer; */
+    background-color: rgba(255, 166, 0, 0.805);
+    border-radius: 50px;
+    /* border: 1px solid green; */
+}
+
+main>.section2>figure>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* cursor: pointer; */
+}
+
+main>.section2>figure>figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+    /* background-color: orange; */
+}
+
+main>.section2>figure>figcaption>p {
+    font-size: 25px;
+    color: rgba(5, 5, 113, 0.792);
+    /* cursor: pointer; */
+}
+
+
+
+footer{
+    /* border: 2px solid red; */
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+footer > .sectiona{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+footer > .sectiona > div{
+    /* border: 2px solid green; */
+}
+footer > .sectiona > div > h3{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+footer > .sectiona > div > div{
+    display: flex;
+    flex-direction: column;
+}
+footer > .sectiona > div > div > a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer > .sectionb{
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+footer > .sectionb > .diva{
+    display: flex;
+    /* border: 2px solid red; */
+}
+footer > .sectionb > .diva > .icondiv{
+    margin-right: 25px;
+}
+footer > .sectionb > .diva >  .icondiv > .iconimgdiv{
+    width: 40px;
+    height: 40px;
+}
+footer > .sectionb > .diva >  .icondiv > .iconimgdiv > img{
+    width: 100%;
+    height: 100%;
+}
+footer > .sectionb > .divb{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > .sectionb > .divb > .logos{
+    width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+footer > .sectionb > .divb > .logos > img{
+    width: 100%;
+    height: 100%;
+}
+footer > .sectionb > .divb > a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+
+
+.login{
+    margin-top: 10vh;
+}
+.login > section{
+    border: 1px solid green;
+}
+.login > section > div{
+    border: 1px solid red;
+    text-align: center;
+}
+.login > section > div >h2{
+    color: rgba(5, 5, 113, 0.792);
+}
+
+.login > section > form{
+    border: 5px solid purple;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.login > section > form > table{
+    /* width: 50%; */
+    font-size: 30px;
+}
+.login > section > form > table > th{
+    text-align: right;
+}
+

@@ -1,0 +1,976 @@
+/* general CSS for the whole file */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* body */
+body {
+    background-color: #f0efef;
+}
+
+/* scrollbar size */
+
+::-webkit-scrollbar {
+    width: 25px;
+}
+
+/* scrollbar design */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgba(5, 5, 113, 0.792), rgba(5, 5, 113, 0.392));
+    border-radius: 50px;
+}
+
+/* hover on scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(rgba(5, 5, 113, 1), rgba(5, 5, 113, 0.592));
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px grey;
+    background-color: rgba(255, 166, 0, 0.805);
+}
+
+/* navigation bar */
+header>nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 166, 0, 0.805);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10px;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+}
+
+/* div to put in company logo */
+header>nav>.logo {
+    width: 8vh;
+    height: 8vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* company logo */
+header>nav>.logo>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* navtag section */
+header>nav>section{
+    width: 30vw;
+}
+
+/* navtags */
+header>nav>section>.navtags{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+header>nav>section>.navtags>a {
+    text-decoration: none;
+    color: rgba(5, 5, 113, 0.792);
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+header>nav>section>.navtags>a:hover{
+    border-bottom: 1px solid rgba(5, 5, 113, 0.792);
+}
+
+
+
+
+/* CSS FOR HOME PAGE */
+
+
+
+/* main */
+main {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 15px;
+}
+
+main>.section1 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 11vh;
+}
+
+/* div containing company name and slogan */
+main>.section1>.heading {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+}
+
+/* Company name */
+main>.section1>.heading>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 166, 0, 0.805);
+    font-size: 8vh;
+    padding-bottom: 1px;
+}
+
+/* company tagline */
+main>.section1>.heading>h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(5, 5, 113, 0.792);
+    font-size: 4vh;
+    margin-top: 10px;
+}
+
+/* Order button */
+main>.section1>.heading>a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    border: 1px solid red;  
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(245deg, rgba(121,61,9,0.8604691876750701) 44%, rgba(255,55,0,0.6755952380952381) 95%);
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Hover effect for Order button */
+main>.section1>.heading>a:hover{
+    background: rgb(121,61,9);
+    background: linear-gradient(70deg, rgba(121,61,9,0.8604691876750701) 44%, rgba(255, 55, 0, 0.762) 95%);
+    opacity: 0.8;
+}
+
+
+
+/* image */
+main>.section1>.advertisementimg {
+    margin-right: 20%;
+    margin-left: 10%;
+    width: 100vh;
+    height: 40vh;
+}
+
+main>.section1>.advertisementimg>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Div to differentiate between 2 sections */
+.borderdiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.borderdiv>div {
+    width: 30%;
+    margin: 15px 0;
+    border: 2px solid orange;
+}
+
+
+/* section 2 */
+main>.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* special offers image */
+main>.section2>figure {
+    width: 26%;
+    height: 16%;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: rgba(255, 166, 0, 0.805);
+    border-radius: 50px;
+    filter: contrast(0.95);
+}
+
+/* hover effect to show a specific image */
+main>.section2>figure:hover{
+    width: 27%;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.316);
+    filter: contrast(1.2);
+}
+
+
+main>.section2>figure>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* text under the special offers */
+main>.section2>figure>figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>.section2>figure>figcaption>p {
+    font-size: 25px;
+    color: rgba(5, 5, 113, 0.792);
+}
+
+
+/* css for footer */
+footer{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* footer links css */
+footer > .sectiona{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+footer > .sectiona > div > h3{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+footer > .sectiona > div > div{
+    display: flex;
+    flex-direction: column;
+}
+footer > .sectiona > div > div > a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* hover effect to give an underline to when hovering */
+footer > .sectiona > div > div > a:hover{
+    text-decoration: underline;
+}
+
+footer > .sectionb{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* div containing social media links */
+footer > .sectionb > .diva{
+    display: flex;
+}
+footer > .sectionb > .diva > .icondiv{
+    margin-right: 25px;
+}
+footer > .sectionb > .diva >  .icondiv > .iconimgdiv{
+    width: 40px;
+    height: 40px;
+}
+footer > .sectionb > .diva >  .icondiv > .iconimgdiv > a > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* div containing copyright claim */
+
+footer > .sectionb > .divb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > .sectionb > .divb > .logos{
+    width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+footer > .sectionb > .divb > .logos > a > img{
+    width: 100%;
+    height: 100%;
+}
+
+footer > .sectionb > .divb > a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+/* CSS FOR ORDER.html PAGE */
+
+
+
+.body{
+    background-image: linear-gradient(280deg, rgba(121, 61, 9, 0.599) 50%, rgba(255, 55, 0, 0.505) 95%);
+}
+.signin{
+    margin-top: 10vh;
+}
+
+/* Sign up form div*/
+.signin > .loginform{
+    width: 35%;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    background-color: rgba(3, 3, 148, 0.792);
+    color: rgba(255, 166, 0, 0.805);
+    font-size: larger;
+    box-shadow: 0px 15px 400px blue,
+    0px 0px 0px blue;
+    border-radius: 40px;
+}
+
+/* heading */
+.signin > .loginform > h3{
+    margin: 10px 0 20px 0;
+}
+
+/* sign up form */
+.signin > .loginform > form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* labels */
+.signin > .loginform > form > label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* input boxes */
+
+.signin > .loginform > form > input[type="text"],
+.signin > .loginform > form > input[type="email"],
+.signin > .loginform > form > input[type="password"],
+.signin > .loginform > form > input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px 8px 8px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgba(5, 5, 113, 0.792);
+
+}
+
+/* sign up button */
+.signin > .loginform > form > button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid grey;
+    background: linear-gradient(245deg, rgba(121,61,9,0.8604691876750701) 44%, rgba(255,55,0,0.6755952380952381) 95%);
+    color: white;
+    font-size: 20px;
+}
+.signin > .loginform > form > button:hover{
+    background: rgb(121,61,9);
+    background: linear-gradient(70deg, rgba(195, 94, 6, 0.895) 44%, rgba(255, 55, 0, 0.686) 95%);
+    opacity: 0.8;
+}
+
+/* css to shoe effects on clicking the input boxes */
+
+.signin > .loginform > form > input[type="number"]:focus{
+    outline: 1px solid orange;
+    box-shadow: 1px 1px 10px orange,
+    1px 1px 10px red inset; 
+  }
+.signin > .loginform > form > input[type="text"]:focus{
+    outline: 1px solid orange;
+    box-shadow: 1px 1px 10px orange,
+    1px 1px 10px red inset; 
+  }
+.signin > .loginform > form > input[type="email"]:focus{
+    outline: 1px solid orange;
+    box-shadow: 1px 1px 10px orange,
+    1px 1px 10px red inset; 
+  }
+.signin > .loginform > form > input[type="password"]:focus{
+    outline: 1px solid orange;
+    box-shadow: 1px 1px 10px orange,
+    1px 1px 10px red inset; 
+  }
+
+
+/* ordering form div */
+.order1 > .orderform{
+    margin: 30px auto 0 auto;
+    width: 35%;
+    padding: 20px;
+    background-color: rgba(3, 3, 148, 0.792);
+    box-shadow: 0px 0px 400px blue,
+    0px 0px 0px blue;
+    border-radius: 40px;
+
+}
+/* headings */
+.order1 > .orderform > h3{
+    margin: 10px 0 20px 0;
+    color: rgba(255, 166, 0, 0.805);
+    font-size: 28px;
+}
+.order1 > .orderform > form > h3{
+    margin-bottom: 8px;
+    margin-top: 10px;
+    color: rgb(255, 166, 0);
+}
+/* labels */
+.order1 > .orderform > form > label{
+    display: inline;
+    cursor: pointer;
+    color: rgba(255, 166, 0, 0.805);
+   
+}
+/* inputs */
+.order1 > .orderform > form > input[type="radio"],
+.order1 > .orderform > form > input[type="checkbox"],
+.order1 > .orderform > form > select
+{
+    cursor: pointer;
+}
+
+/* buttons to place or reset order */
+.order1 > .orderform > form > .formbuttondiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.order1 > .orderform > form > .formbuttondiv > button{
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid grey;
+    background: linear-gradient(245deg, rgba(121,61,9,0.8604691876750701) 44%, rgba(255,55,0,0.6755952380952381) 95%);
+    color: white;
+    font-size: 20px;
+}
+.order1 > .orderform > form > .formbuttondiv > button:hover{
+    background: rgb(121,61,9);
+    background: linear-gradient(70deg, rgba(195, 94, 6, 0.895) 44%, rgba(255, 55, 0, 0.686) 95%);
+    opacity: 0.8;
+}
+
+
+
+/* responsive for max-width = 1300px */
+
+@media only screen and (max-width: 1300px){
+
+    header>nav {
+        width: 100%;
+        height: 9vh;
+        padding: 0 0 0 10px;
+    }
+    
+    header>nav>.logo {
+        width: 7vh;
+        height: 7vh;
+        border-radius: 5px;
+    }
+    
+    header>nav>section{
+        width: 45vw;
+    }
+    header>nav>section>.navtags>a {
+        font-size: 18px;
+    }
+    
+    
+    main>.section1 {
+        height: 30vh;
+        margin-bottom: 3px;
+    }
+    
+    main>.section1>.heading {
+        padding-left: 60px;
+        width: 60%;
+    }
+    
+    main>.section1>.heading>h1 {
+        font-size: 6vh;
+        padding-bottom: 5px;
+        letter-spacing: 1.2px;
+    }
+    
+    main>.section1>.heading>h2 {
+        font-size: 3vh;
+        margin-top: 5px;
+        letter-spacing: 0.4px;
+    }
+    main>.section1>.heading>a {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        padding: 12px 40px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+    
+    main>.section1>.advertisementimg {
+        width: 50vh;
+        height: 30vh;
+    }
+    
+    .borderdiv {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .borderdiv>div {
+        width: 26%;
+        margin: 8px 0 ;
+        border: 1px solid orange;
+    }
+    
+    
+    main>.section2>figure {
+        width: 26%;
+        height: 1%;
+        margin-top: 5px;
+        border-radius: 40px;
+    }
+    
+    main>.section2>figure:hover{
+        width: 28%;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.316);
+        filter: contrast(1.2);
+    }
+    
+    main>.section2>figure>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    
+
+    
+    main>.section2>figure>figcaption>p {
+        font-size: 18px;
+    }
+
+
+
+    footer{
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+
+    footer > .sectiona > div > h3{
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    footer > .sectiona > div > div > a{
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    
+
+
+    footer > .sectionb{
+        height: 20px;
+    }
+    footer > .sectionb > .diva > .icondiv{
+        margin-right: 5px;
+    }
+    footer > .sectionb > .diva >  .icondiv > .iconimgdiv{
+        width: 25px;
+        height: 25px;
+    }
+    footer > .sectionb > .divb > .logos{
+        width: 5vh;
+        height: 5vh;
+        margin-right: 5px;
+    }
+    footer > .sectionb > .divb > a{
+        font-size: 16px;
+    }
+
+    .signin{
+        margin-top: 9vh;
+    }
+    .signin > .loginform{
+        width: 40%;
+    }
+
+    .signin > .loginform > form > button{
+        padding: 10px 26px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+    
+    .order1 > .orderform{
+        width: 40%;
+    }
+
+    .order1 > .orderform > form > .formbuttondiv > button{
+        padding: 10px 26px;
+        border-radius: 40px;
+        font-size: 15px;
+    }
+}
+
+
+/* responsive for max-width = 1000px */
+
+@media only screen and (max-width: 1000px){
+
+    header>nav {
+        width: 100%;
+        height: 8vh;
+    }
+    
+    header>nav>.logo {
+        width: 6vh;
+        height: 6vh;
+    }
+    
+    header>nav>section{
+        width: 45vw;
+    }
+    header>nav>section>.navtags>a {
+        font-size: 14px;
+    }
+    
+    
+    main>.section1 {
+        height: 25vh;
+        margin-bottom: 2px;
+    }
+    
+    main>.section1>.heading {
+        padding-left: 30px;
+        width: 70%;
+        margin-left: 30px;
+    }
+    
+    main>.section1>.heading>h1 {
+        font-size: 5vh;
+        padding-bottom: 3px;
+        letter-spacing: 1px;
+    }
+    
+    main>.section1>.heading>h2 {
+        font-size: 2.5vh;
+        margin-top: 3px;
+    }
+    main>.section1>.heading>a {
+        margin-top: 10px;
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+    
+    main>.section1>.advertisementimg {
+        width: 45vh;
+        height: 25vh;
+        margin-right: 100px;
+        margin-left: 0px;
+    }
+
+    .borderdiv>div {
+        width: 24%;
+    }
+    
+    
+    main>.section2>figure {
+        width: 33.4%;
+    }
+    
+    main>.section2>figure:hover{
+        width: 35%;
+    }
+
+    main>.section2>figure>figcaption>p {
+        font-size: 18px;
+    }
+
+
+    footer{
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+  
+    footer > .sectiona > div > h3{
+        font-size: 16px;
+    }
+
+    footer > .sectiona > div > div > a{
+        font-size: 12px;
+    }
+    
+
+    footer > .sectionb > .diva >  .icondiv > .iconimgdiv{
+        width: 20px;
+        height: 20px;
+    }
+    footer > .sectionb > .divb > .logos{
+        width: 4vh;
+        height: 4vh;
+    }
+    footer > .sectionb > .divb > a{
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+
+
+    .signin{
+        margin-top: 8vh;
+    }
+    .signin > .loginform{
+        width: 50%;
+    }
+    .order1 > .orderform{
+        width: 50%;
+    }
+    
+}
+
+
+
+/* responsive for max-width = 715px */
+
+@media only screen and (max-width: 715px){
+
+
+    main>.section1 {
+        height: 20vh;
+        margin-bottom: 1px;
+    }
+    
+    main>.section1>.heading {
+        padding-left: 20px;
+        width: 60%;
+    }
+    
+    main>.section1>.heading>h1 {
+        font-size: 3.5vh;
+    }
+    
+    main>.section1>.heading>h2 {
+        font-size: 2vh;
+    }
+    
+    main>.section1>.heading>a{
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-size: 10px;
+    }
+    
+    main>.section1>.advertisementimg {
+        width: 35vh;
+        height: 20vh;
+    }
+
+    main>.section2>figure>figcaption>p {
+        font-size: 14px;
+    }
+
+
+    .signin{
+        margin-top: 9vh;
+    }
+    .signin > .loginform{
+        width: 60%;
+    }
+
+    .order1 > .orderform{
+        width: 60%;
+    }
+}
+
+/* responsive for max-width = 580px */
+
+@media only screen and (max-width: 580px) {
+    header>nav {
+        width: 100%;
+        height: 8vh;
+        padding: 0 0 0 10px;
+    }
+    
+    header>nav>.logo {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 5px;
+    }
+    
+    header>nav>section{
+        width: 55vw;
+    }
+    header>nav>section>.navtags>a {
+        font-size: 9px;
+    }
+    
+    
+    main>.section1 {
+        height: 15vh;
+        margin-bottom: 1px;
+    }
+    
+    main>.section1>.heading {
+        padding-left: 10px;
+        width: 225%;
+    }
+    
+    main>.section1>.heading>h1 {
+        font-size: 3vh;
+        padding-bottom: 0px;
+        letter-spacing: 1.5px;
+    }
+    
+    main>.section1>.heading>h2 {
+        font-size: 1.5vh;
+        margin-top: 5px;
+        letter-spacing: 0.6px;
+    }
+    main>.section1>.heading>a {
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-size: 8px;
+    }
+    
+    main>.section1>.advertisementimg {
+        width: 40vh;
+        height: 10vh;
+        margin: 0 10%;
+    }
+    
+    .borderdiv {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .borderdiv>div {
+        width: 30%;
+        margin: 12px 0;
+        border: 1px solid orange;
+    }
+    
+    main>.section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    main>.section2>figure {
+        width: 40%;
+        height: 1%;
+        margin-top: 5px;
+        cursor: pointer;
+        background-color: rgba(255, 166, 0, 0.805);
+        border-radius: 50px;
+        filter: contrast(0.95);
+    }
+    
+    main>.section2>figure:hover{
+        width: 43%;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.316);
+        filter: contrast(1.2);
+    }
+    
+    main>.section2>figure>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    
+    main>.section2>figure>figcaption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main>.section2>figure>figcaption>p {
+        font-size: 10px;
+        color: rgba(5, 5, 113, 0.792);
+    }
+
+
+
+    footer{
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    footer > .sectiona{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    footer > .sectiona > div > h3{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    footer > .sectiona > div > div > a{
+        font-size: 9px;
+        margin-top: 5px;
+    }
+    
+
+
+    footer > .sectionb{
+        height: 20px;
+    }
+    footer > .sectionb > .diva > .icondiv{
+        margin-right: 5px;
+    }
+    footer > .sectionb > .diva >  .icondiv > .iconimgdiv{
+        width: 15px;
+        height: 15px;
+    }
+    footer > .sectionb > .divb > .logos{
+        width: 3vh;
+        height: 3vh;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+    footer > .sectionb > .divb > a{
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+
+
+    .signin{
+        margin-top: 8vh;
+    }
+    .signin > .loginform{
+        width: 80%;
+    }
+    
+    .order1 > .orderform{
+        width: 90%;
+    }
+}
